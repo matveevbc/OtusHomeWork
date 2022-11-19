@@ -5,8 +5,6 @@ namespace Lessons.Architecture.Mechanics
 {
     public class ShootMechanic : MonoBehaviour
     {
-        public event Action OnEnded;
-
         [SerializeField]
         private EventReceiver shoot;
 
@@ -14,19 +12,15 @@ namespace Lessons.Architecture.Mechanics
         private TimerBehaviour countdown;
 
         [SerializeField]
-        private GameObject prefab;
+        private BulletSpawner bulletSpawner;
 
         [SerializeField]
-        private Transform player;
+        private AmmoEngine ammoEngine;
 
         [SerializeField]
-        private Spawner spawner;
+        private TimerBehaviour reloadTimer;
 
-        [SerializeField]
-        private AmmoMechanic ammo;
-
-
-        private void OnEnable()
+       private void OnEnable()
         {
             this.shoot.OnEvent += this.OnShootRequest;
         }
@@ -38,21 +32,25 @@ namespace Lessons.Architecture.Mechanics
 
         public void OnShootRequest()
         {
+            if (this.reloadTimer.IsPlaying)
+            {
+                return;
+            }
+
             if (this.countdown.IsPlaying)
             {
                 return;
             }
 
-            if (!this.ammo.TrySpendAmmo())
+            if (!this.ammoEngine.TrySpendPoint())
             {
                 return;
             }
 
-            spawner.Spawn(prefab, player);
+            bulletSpawner.Spawn();
 
             this.countdown.ResetTime();
             this.countdown.Play();
-            this.OnEnded?.Invoke();
         }
     }
 

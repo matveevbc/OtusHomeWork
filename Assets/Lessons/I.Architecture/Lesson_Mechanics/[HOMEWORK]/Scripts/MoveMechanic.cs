@@ -9,7 +9,7 @@ namespace Lessons.Architecture.Mechanics
     {
 
         [SerializeField]
-        private Move move;
+        private MoveEngine move;
 
         [SerializeField]
         private EventReceiver startReceiver;
@@ -17,11 +17,6 @@ namespace Lessons.Architecture.Mechanics
 
         [SerializeField]
         private EventReceiver stopReceiver;
-
-
-        [SerializeField]
-        private Transform transform;
-
 
         private void OnEnable()
         {
@@ -37,7 +32,7 @@ namespace Lessons.Architecture.Mechanics
 
         private void Move()
         {
-            move.Play(transform);
+            move.Play();
         }
 
         private void Stop()

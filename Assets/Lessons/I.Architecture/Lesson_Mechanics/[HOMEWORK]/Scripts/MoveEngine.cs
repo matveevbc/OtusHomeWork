@@ -6,15 +6,14 @@ using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class Move : MonoBehaviour
+    public class MoveEngine : MonoBehaviour
     {
 
         [SerializeField]
         private Direction direction;
 
-        private Transform transform;
-
-        public event Action OnEnded;
+        [SerializeField]
+        private Transform movetransform;
 
         private bool isMoving;
 
@@ -22,9 +21,8 @@ namespace Lessons.Architecture.Mechanics
         private float speed;
 
 
-        public void Play(Transform _t)
+        public void Play()
         {
-            transform = _t;
             isMoving = true;
             StartCoroutine(this.TimerRoutine());
         }
@@ -42,28 +40,26 @@ namespace Lessons.Architecture.Mechanics
                 switch (direction)
                 {
                     case Direction.Forward:
-                        transform.Translate(Vector3.forward * speed);
+                        movetransform.Translate(Vector3.forward * speed);
                         break;
                     case Direction.Backward:
-                        transform.Translate(Vector3.back * speed);
+                        movetransform.Translate(Vector3.back * speed);
                         break;
                     case Direction.LeftStep:
-                        transform.Translate(Vector3.left * speed);
+                        movetransform.Translate(Vector3.left * speed);
                         break;
                     case Direction.RightStep:
-                        transform.Translate(Vector3.right * speed);
+                        movetransform.Translate(Vector3.right * speed);
                         break;
                     case Direction.RotateLeft:
-                        transform.Rotate(Vector3.up, speed);
+                        movetransform.Rotate(Vector3.up, speed);
                         break;
                     case Direction.RotateRight:
-                        transform.Rotate(Vector3.up, -speed);
+                        movetransform.Rotate(Vector3.up, -speed);
                         break;
                 }
                 yield return null;
             }
-
-            this.OnEnded?.Invoke();
         }
     }
 }
