@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Lessons.Architecture.Mechanics
+namespace Lessons.Architecture
 {
     public class BulletSpawner : MonoBehaviour
     {
