@@ -3,10 +3,11 @@ using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public sealed class Entity : MonoBehaviour
+    public sealed class Entity : MonoBehaviour, IEntity
     {
         [SerializeField]
         private MonoBehaviour[] components;
+        private Entity entity;
 
         public T Get<T>()
         {
@@ -36,6 +37,30 @@ namespace Lessons.Architecture.Mechanics
 
             result = default;
             return false;
+        }
+
+       
+
+        
+
+        public T[] GetAll<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+        public object[] GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(object element)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(object element)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,48 +1,38 @@
+using Lessons.Architecture.GameContexts;
 using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class MoveController : MonoBehaviour
+    public class MoveController : MonoBehaviour,
+        IStartGameListener,
+        IFinishGameListener,
+        IConstructListener
     {
-        [SerializeField]
-        private Entity unit;
+        private InputController input;
 
-        private void Update()
+        private IMoveComponent moveComponent;
+
+
+        public void Construct(GameContext context)
         {
-          this.HandleKeyboard();
-        }
-        
-        private void HandleKeyboard()
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
-                this.Move(Direction.Forward);
-            }
-             else if (Input.GetKey(KeyCode.S))
-                 {
-                     this.Move(Direction.Backward);
-                 }
-             else if (Input.GetKey(KeyCode.A))
-                 {
-                     this.Move(Direction.LeftStep);
-                 }
-             else if (Input.GetKey(KeyCode.D))
-                 {
-                     this.Move(Direction.RightStep);
-                 }
-             else if (Input.GetKey(KeyCode.Q))
-                 {
-                    this.Move(Direction.RotateLeft);
-                 }
-             else if (Input.GetKey(KeyCode.E))
-                {
-                    this.Move(Direction.RotateRight);
-                }
+            this.input = context.GetService<InputController>();
+            this.moveComponent = context.GetService<CharacterService>().
+                GetCharacter(). Get<IMoveComponent>();
         }
 
-        private void Move(Direction dir)
+        void IStartGameListener.OnStartGame()
         {
-            unit.Get<MoveComponent>().Move(dir);
+            this.input.OnMove += OnMove;
+        }
+
+        void IFinishGameListener.OnFinishGame()
+        {
+            this.input.OnMove  -= OnMove;
+        }
+
+        private void OnMove(Direction dir)
+        {
+            this.moveComponent.Move(dir);
         }
 
     }

@@ -1,30 +1,40 @@
 
+using Lessons.Architecture.GameContexts;
 using UnityEngine;
 
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class JumpController : MonoBehaviour
+    public class JumpController : MonoBehaviour,
+        IStartGameListener,
+        IFinishGameListener,
+        IConstructListener
     {
-        [SerializeField]
-        private Entity unit;
+        private InputController input;
 
-        private void Update()
+        private IJumpComponent jumpComponent;
+
+
+        public void Construct(GameContext context)
         {
-            this.HandleKeyboard();
+            this.input = context.GetService<InputController>();
+            this.jumpComponent = context.GetService<CharacterService>().
+                GetCharacter().Get<IJumpComponent>();
         }
 
-        private void HandleKeyboard()
+        void IStartGameListener.OnStartGame()
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                this.Jump();
-            }
+            this.input.OnJump += Jump;
+        }
+
+        void IFinishGameListener.OnFinishGame()
+        {
+            this.input.OnJump-= Jump;
         }
 
         private void Jump()
         {
-            unit.Get<JumpComponent>().Jump();
+            jumpComponent.Jump();
         }
     }
 

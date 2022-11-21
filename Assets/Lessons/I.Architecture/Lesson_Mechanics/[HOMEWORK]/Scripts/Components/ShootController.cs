@@ -1,28 +1,38 @@
+using Lessons.Architecture.GameContexts;
 using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class ShootController : MonoBehaviour
+    public class ShootController : MonoBehaviour,
+        IStartGameListener,
+        IFinishGameListener,
+        IConstructListener
     {
-        [SerializeField]
-        private Entity unit;
+        private InputController input;
 
-        private void Update()
+        private IShootComponent shootComponent;
+
+
+        public void Construct(GameContext context)
         {
-            this.HandleKeyboard();
+            this.input = context.GetService<InputController>();
+            this.shootComponent = context.GetService<CharacterService>().
+                GetCharacter().Get<IShootComponent>();
         }
 
-        private void HandleKeyboard()
+        void IStartGameListener.OnStartGame()
         {
-            if (Input.GetKey(KeyCode.Mouse0))
-            {
-                this.Shoot();
-            }
+            this.input.OnJump += Shoot;
+        }
+
+        void IFinishGameListener.OnFinishGame()
+        {
+            this.input.OnJump -= Shoot;
         }
 
         private void Shoot()
         {
-            unit.Get<ShootComponent>().Shoot();
+            shootComponent.Shoot();
         }
     }
 }

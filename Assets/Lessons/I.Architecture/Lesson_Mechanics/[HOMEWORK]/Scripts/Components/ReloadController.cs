@@ -1,28 +1,37 @@
+using Lessons.Architecture.GameContexts;
 using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class ReloadController : MonoBehaviour
+    public class ReloadController : MonoBehaviour,
+        IStartGameListener,
+        IFinishGameListener,
+        IConstructListener
     {
-        [SerializeField]
-        private Entity unit;
+        private InputController input;
 
-        private void Update()
+        private IReloadComponent reloadComponent;
+
+
+        public void Construct(GameContext context)
         {
-            this.HandleKeyboard();
+            this.input = context.GetService<InputController>();
+            this.reloadComponent = context.GetService<CharacterService>().
+                GetCharacter().Get<IReloadComponent>();
         }
 
-        private void HandleKeyboard()
+        void IStartGameListener.OnStartGame()
         {
-            if (Input.GetKey(KeyCode.R))
-            {
-                this.Reload();
-            }
+            this.input.OnJump += Reload;
         }
 
+        void IFinishGameListener.OnFinishGame()
+        {
+            this.input.OnJump -= Reload;
+        }
         private void Reload()
         {
-            unit.Get<ReloadComponent>().Reload();
+            reloadComponent.Reload();
         }
     }
 }
