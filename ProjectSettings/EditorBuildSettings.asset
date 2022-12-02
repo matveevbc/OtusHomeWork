@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/[HOMEWORK]/SceneMatveevHomeWork.unity
+    path: Assets/[HOMEWORK]/Core, Component, Context/SceneMatveevHomeWork.unity
     guid: d78957cbbdf74426e93999d61a18dbcd
   m_configObjects: {}

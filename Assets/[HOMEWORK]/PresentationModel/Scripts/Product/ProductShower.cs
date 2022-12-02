@@ -1,0 +1,26 @@
+using GameElements;
+using Sirenix.OdinInspector;
+using UnityEngine;
+
+namespace Lessons.Architecture.PresentationModel
+{
+    public sealed class ProductShower : MonoBehaviour, IGameInitElement
+    {
+        private PopupManager popupManager;
+
+        private ProductPresentationModelFactory presenterFactory;
+
+        [Button]
+        public void ShowProduct(Product product)
+        {
+            var presentationModel = this.presenterFactory.CreatePresenter(product);
+            this.popupManager.ShowPopup(PopupName.PRODUCT, presentationModel);
+        }
+
+        void IGameInitElement.InitGame(IGameContext context)
+        {
+            this.popupManager = context.GetService<PopupManager>();
+            this.presenterFactory = context.GetService<ProductPresentationModelFactory>();
+        }
+    }
+}
