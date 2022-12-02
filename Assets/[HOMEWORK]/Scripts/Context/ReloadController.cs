@@ -8,14 +8,14 @@ namespace Lessons.Architecture.Mechanics
         IFinishGameListener,
         IConstructListener
     {
-        private InputController input;
+        private PlayerInput input;
 
         private IReloadComponent reloadComponent;
 
 
         public void Construct(GameContext context)
         {
-            this.input = context.GetService<InputController>();
+            this.input = context.GetService<PlayerInput>();
             this.reloadComponent = context.GetService<CharacterService>().
                 GetCharacter().Get<IReloadComponent>();
         }

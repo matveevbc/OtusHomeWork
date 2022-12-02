@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Lessons.Architecture.Mechanics;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -48,7 +49,7 @@ namespace Lessons.Architecture.GameContexts
             this.listeners.Remove(listener);
         }
 
-        [Button]
+     //   [Button]
         public void ConstructGame()
         {
             foreach (var listener in this.listeners)
@@ -62,7 +63,7 @@ namespace Lessons.Architecture.GameContexts
             Debug.Log("Game Construct!");
         }
 
-        [Button]
+      //  [Button]
         public void StartGame()
         {
             foreach (var listener in this.listeners)
@@ -77,6 +78,34 @@ namespace Lessons.Architecture.GameContexts
         }
 
         [Button]
+        public void PauseGame()
+        {
+            foreach (var listener in this.listeners)
+            {
+                if (listener is IPauseGameListener startListener)
+                {
+                    startListener.OnPauseGame();
+                }
+            }
+
+            Debug.Log("Game Paused!");
+        }
+
+        [Button]
+        public void ResumeGame()
+        {
+            foreach (var listener in this.listeners)
+            {
+                if (listener is IResumeGameListener startListener)
+                {
+                    startListener.OnResumeGame();
+                }
+            }
+
+            Debug.Log("Game Resumed!");
+        }
+
+       // [Button]
         public void FinishGame()
         {
             foreach (var listener in this.listeners)

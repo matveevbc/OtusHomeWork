@@ -4,8 +4,10 @@ using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public sealed class InputController : MonoBehaviour,
+    public sealed class PlayerInput: MonoBehaviour,
         IStartGameListener,
+        IPauseGameListener,
+        IResumeGameListener,
         IFinishGameListener
     {
         public event Action<Direction> OnMove;
@@ -28,6 +30,16 @@ namespace Lessons.Architecture.Mechanics
             this.enabled = false;
         }
 
+        void IPauseGameListener.OnPauseGame()
+        {
+            this.enabled = false;
+        }
+
+        void IResumeGameListener.OnResumeGame()
+        {
+            this.enabled = true;
+        }
+
         private void Update()
         {
             this.HandleKeyboard();
@@ -35,8 +47,8 @@ namespace Lessons.Architecture.Mechanics
 
         private void HandleKeyboard()
         {
-            this.Move(Direction.Forward);
-            if (Input.GetKey(KeyCode.W))
+           // this.Move(Direction.LeftStep);
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 this.Move(Direction.Forward);
             }

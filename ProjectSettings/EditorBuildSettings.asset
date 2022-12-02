@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Lessons/I.Architecture/Lesson_Mechanics/[HOMEWORK]/SceneMatveev.unity
+    path: Assets/[HOMEWORK]/SceneMatveevHomeWork.unity
     guid: d78957cbbdf74426e93999d61a18dbcd
   m_configObjects: {}

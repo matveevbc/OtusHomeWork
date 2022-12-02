@@ -8,14 +8,14 @@ namespace Lessons.Architecture.Mechanics
         IFinishGameListener,
         IConstructListener
     {
-        private InputController input;
+        private PlayerInput input;
 
         private IMoveComponent moveComponent;
 
 
         public void Construct(GameContext context)
         {
-            this.input = context.GetService<InputController>();
+            this.input = context.GetService<PlayerInput>();
             this.moveComponent = context.GetService<CharacterService>().
                 GetCharacter(). Get<IMoveComponent>();
         }

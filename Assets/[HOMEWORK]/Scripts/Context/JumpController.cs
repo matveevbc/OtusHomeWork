@@ -10,14 +10,14 @@ namespace Lessons.Architecture.Mechanics
         IFinishGameListener,
         IConstructListener
     {
-        private InputController input;
+        private PlayerInput input;
 
         private IJumpComponent jumpComponent;
 
 
         public void Construct(GameContext context)
         {
-            this.input = context.GetService<InputController>();
+            this.input = context.GetService<PlayerInput>();
             this.jumpComponent = context.GetService<CharacterService>().
                 GetCharacter().Get<IJumpComponent>();
         }

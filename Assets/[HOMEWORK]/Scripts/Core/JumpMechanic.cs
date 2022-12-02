@@ -20,10 +20,5 @@ namespace Lessons.Architecture.Mechanics
         {
             this.startReceiver.OnEvent -= this.jumpEngine.StartJump;
         }
-
-        
-
-      
-
     }
 }
