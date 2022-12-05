@@ -47,8 +47,8 @@ namespace Lessons.Architecture.Mechanics
 
         private void HandleKeyboard()
         {
-           // this.Move(Direction.LeftStep);
-            if (Input.GetKeyDown(KeyCode.W))
+          //  this.Move(Direction.Forward);
+            if (Input.GetKey(KeyCode.W))
             {
                 this.Move(Direction.Forward);
             }

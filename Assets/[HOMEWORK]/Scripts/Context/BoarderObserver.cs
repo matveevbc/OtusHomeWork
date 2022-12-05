@@ -4,11 +4,14 @@ using UnityEngine;
 
 namespace Lessons.Architecture.Mechanics
 {
-    public class BoarderObserver : MonoBehaviour, IConstructListener
+    public class BoarderObserver : MonoBehaviour,
+        IStartGameListener,
+        IFinishGameListener,
+        IConstructListener
     {
         private GameContext context;
 
-        public static Action<Collider> OnTriggerEnter;
+        private ITriggerComponent triggerComponent;
 
         public void Construct(GameContext _context)
         {
@@ -18,20 +21,26 @@ namespace Lessons.Architecture.Mechanics
         private void Init(GameContext _context)
         {
             context = _context;
-            OnTriggerEnter += TriggerEnter;
+            triggerComponent = context.GetService<CharacterService>().
+                GetCharacter().Get<ITriggerComponent>();
         }
 
-        private void EndGame()
+        void IStartGameListener.OnStartGame()
         {
-            context.FinishGame();
-            OnTriggerEnter -= TriggerEnter;
+            this.triggerComponent.OnTrigger += TriggerEnter;
+        }
+
+        void IFinishGameListener.OnFinishGame()
+        {
+            this.triggerComponent.OnTrigger -= TriggerEnter;
         }
 
         private void TriggerEnter(Collider other)
         {
-            EndGame();
+            if(other.tag == "Finish")
+            {
+                context.FinishGame();
+            }
         }
-
     }
-
 }
