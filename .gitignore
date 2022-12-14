@@ -70,3 +70,237 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Vector3EventReciever.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Vector3EventReciever.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Vector3Behaviour.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Vector3Behaviour.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/TrigerBehaviour.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/TrigerBehaviour.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/ShootMechanic.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/ShootMechanic.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/ReloadAmmoMechanic.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/ReloadAmmoMechanic.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/MoveMechanic.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/MoveMechanic.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/JumpMechanic.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/JumpMechanic.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/JumpEngine.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/JumpEngine.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/EntityEventReceiver.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/EntityEventReceiver.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/DirectionEventReciever.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/DirectionEventReciever.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/BulletSpawner.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/BulletSpawner.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Bullet.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/Bullet.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/AmmoEngine.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core/AmmoEngine.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Core.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/TestInput.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/TestInput.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/ShootController.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/ShootController.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/ReloadController.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/ReloadController.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/PlayerSystem.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/PlayerSystem.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/PlayerInput.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/PlayerInput.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/MoveController.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/MoveController.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/JumpController.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/JumpController.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IStartGameListener.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IStartGameListener.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IResumeGameListener.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IResumeGameListener.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IPauseGameListener.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IPauseGameListener.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IFinishGameListener.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IFinishGameListener.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IConstructListener.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/IConstructListener.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameManager.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameManager.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameContextInstaller.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameContextInstaller.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameContext.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/GameContext.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/CharacterService.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/CharacterService.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/CameraService.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/CameraService.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/BoarderObserver.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context/BoarderObserver.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Context.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/ShootComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/ShootComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/ReloadComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/ReloadComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/MoveComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/MoveComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/JumpComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/JumpComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IShootComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IShootComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IReloadComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IReloadComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IMoveComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IMoveComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IJumpComponent.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IJumpComponent.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IEntity.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IEntity.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IEnemyDetecter.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/IEnemyDetecter.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/Entity.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components/Entity.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts/Components.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Adapter.cs.meta
+Assets/HOMEWORK/Core, Component, Context/Scripts/Adapter.cs
+Assets/HOMEWORK/Core, Component, Context/Scripts.meta
+Assets/HOMEWORK/Core, Component, Context/SceneMatveevHomeWork.unity.meta
+Assets/HOMEWORK/Core, Component, Context/SceneMatveevHomeWork.unity
+Assets/HOMEWORK/Core, Component, Context/Prefab/GameContext.prefab.meta
+Assets/HOMEWORK/Core, Component, Context/Prefab/GameContext.prefab
+Assets/HOMEWORK/Core, Component, Context/Prefab/Bullet.prefab.meta
+Assets/HOMEWORK/Core, Component, Context/Prefab/Bullet.prefab
+Assets/HOMEWORK/Core, Component, Context/Prefab.meta
+Assets/HOMEWORK/Core, Component, Context.meta
+Assets/HOMEWORK/Common/Sprites/WidgetQuest.png.meta
+Assets/HOMEWORK/Common/Sprites/WidgetQuest.png
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Right).png.meta
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Right).png
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Left).png.meta
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Left).png
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Left Short).png.meta
+Assets/HOMEWORK/Common/Sprites/Widget (Horizontal Left Short).png
+Assets/HOMEWORK/Common/Sprites/Widget (Barn).png.meta
+Assets/HOMEWORK/Common/Sprites/Widget (Barn).png
+Assets/HOMEWORK/Common/Sprites/Tree.png.meta
+Assets/HOMEWORK/Common/Sprites/Tree.png
+Assets/HOMEWORK/Common/Sprites/Sunrays.png.meta
+Assets/HOMEWORK/Common/Sprites/Sunrays.png
+Assets/HOMEWORK/Common/Sprites/Stone.png.meta
+Assets/HOMEWORK/Common/Sprites/Stone.png
+Assets/HOMEWORK/Common/Sprites/Stack (InventoryItem).png.meta
+Assets/HOMEWORK/Common/Sprites/Stack (InventoryItem).png
+Assets/HOMEWORK/Common/Sprites/Square (White).png.meta
+Assets/HOMEWORK/Common/Sprites/Square (White).png
+Assets/HOMEWORK/Common/Sprites/Slider.png.meta
+Assets/HOMEWORK/Common/Sprites/Slider.png
+Assets/HOMEWORK/Common/Sprites/ScrollHandle.png.meta
+Assets/HOMEWORK/Common/Sprites/ScrollHandle.png
+Assets/HOMEWORK/Common/Sprites/Scrollbar.png.meta
+Assets/HOMEWORK/Common/Sprites/Scrollbar.png
+Assets/HOMEWORK/Common/Sprites/ProgressBar.png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar.png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Yellow).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Yellow).png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (White).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (White).png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Red).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Red).png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Green).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Green).png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Brown).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Brown).png
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Base).png.meta
+Assets/HOMEWORK/Common/Sprites/ProgressBar (Base).png
+Assets/HOMEWORK/Common/Sprites/Portrait.png.meta
+Assets/HOMEWORK/Common/Sprites/Portrait.png
+Assets/HOMEWORK/Common/Sprites/Portrait (InventoryItem).png.meta
+Assets/HOMEWORK/Common/Sprites/Portrait (InventoryItem).png
+Assets/HOMEWORK/Common/Sprites/PointMarker.png.meta
+Assets/HOMEWORK/Common/Sprites/PointMarker.png
+Assets/HOMEWORK/Common/Sprites/PointMarker (With Circle).png.meta
+Assets/HOMEWORK/Common/Sprites/PointMarker (With Circle).png
+Assets/HOMEWORK/Common/Sprites/Pointer (Vertical).png.meta
+Assets/HOMEWORK/Common/Sprites/Pointer (Vertical).png
+Assets/HOMEWORK/Common/Sprites/Pointer (Horizontal).png.meta
+Assets/HOMEWORK/Common/Sprites/Pointer (Horizontal).png
+Assets/HOMEWORK/Common/Sprites/Line (Thin).png.meta
+Assets/HOMEWORK/Common/Sprites/Line (Thin).png
+Assets/HOMEWORK/Common/Sprites/Icon (Settings).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Settings).png
+Assets/HOMEWORK/Common/Sprites/Icon (Potion).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Potion).png
+Assets/HOMEWORK/Common/Sprites/Icon (Gem).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Gem).png
+Assets/HOMEWORK/Common/Sprites/Icon (Enemy).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Enemy).png
+Assets/HOMEWORK/Common/Sprites/Icon (Coin).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Coin).png
+Assets/HOMEWORK/Common/Sprites/Icon (Backpack).png.meta
+Assets/HOMEWORK/Common/Sprites/Icon (Backpack).png
+Assets/HOMEWORK/Common/Sprites/Header (Popup).png.meta
+Assets/HOMEWORK/Common/Sprites/Header (Popup).png
+Assets/HOMEWORK/Common/Sprites/Fading.png.meta
+Assets/HOMEWORK/Common/Sprites/Fading.png
+Assets/HOMEWORK/Common/Sprites/Dropdown (Options).png.meta
+Assets/HOMEWORK/Common/Sprites/Dropdown (Options).png
+Assets/HOMEWORK/Common/Sprites/Dropdown (Base).png.meta
+Assets/HOMEWORK/Common/Sprites/Dropdown (Base).png
+Assets/HOMEWORK/Common/Sprites/Damage.png.meta
+Assets/HOMEWORK/Common/Sprites/Damage.png
+Assets/HOMEWORK/Common/Sprites/Cursor.png.meta
+Assets/HOMEWORK/Common/Sprites/Cursor.png
+Assets/HOMEWORK/Common/Sprites/Cross.png.meta
+Assets/HOMEWORK/Common/Sprites/Cross.png
+Assets/HOMEWORK/Common/Sprites/Check.png.meta
+Assets/HOMEWORK/Common/Sprites/Check.png
+Assets/HOMEWORK/Common/Sprites/Card.png.meta
+Assets/HOMEWORK/Common/Sprites/Card.png
+Assets/HOMEWORK/Common/Sprites/ButtonSound.png.meta
+Assets/HOMEWORK/Common/Sprites/ButtonSound.png
+Assets/HOMEWORK/Common/Sprites/ButtonMusic.png.meta
+Assets/HOMEWORK/Common/Sprites/ButtonMusic.png
+Assets/HOMEWORK/Common/Sprites/Button (Yellow).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Yellow).png
+Assets/HOMEWORK/Common/Sprites/Button (Violet).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Violet).png
+Assets/HOMEWORK/Common/Sprites/Button (Player Activity).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Player Activity).png
+Assets/HOMEWORK/Common/Sprites/Button (Orange).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Orange).png
+Assets/HOMEWORK/Common/Sprites/Button (Green).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Green).png
+Assets/HOMEWORK/Common/Sprites/Button (Gray).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Gray).png
+Assets/HOMEWORK/Common/Sprites/Button (Close).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Close).png
+Assets/HOMEWORK/Common/Sprites/Button (Blue).png.meta
+Assets/HOMEWORK/Common/Sprites/Button (Blue).png
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Trading).png.meta
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Trading).png
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Square).png.meta
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Square).png
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Rect2).png.meta
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Rect2).png
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Rect).png.meta
+Assets/HOMEWORK/Common/Sprites/BubbleDialog (Rect).png
+Assets/HOMEWORK/Common/Sprites/Background (Popup).png.meta
+Assets/HOMEWORK/Common/Sprites/Background (Popup).png
+Assets/HOMEWORK/Common/Sprites/Background (InventoryItem).png.meta
+Assets/HOMEWORK/Common/Sprites/Background (InventoryItem).png
+Assets/HOMEWORK/Common/Sprites/Background (Booster).png.meta
+Assets/HOMEWORK/Common/Sprites/Background (Booster).png
+Assets/HOMEWORK/Common/Sprites/Arrow (Black).png.meta
+Assets/HOMEWORK/Common/Sprites/Arrow (Black).png
+Assets/HOMEWORK/Common/Sprites.meta
+Assets/HOMEWORK/Common/Scripts/BuyButton.cs.meta
+Assets/HOMEWORK/Common/Scripts/BuyButton.cs
+Assets/HOMEWORK/Common/Scripts.meta
+Assets/HOMEWORK/Common/Prefab/WidgetMoney.prefab.meta
+Assets/HOMEWORK/Common/Prefab/WidgetMoney.prefab
+Assets/HOMEWORK/Common/Prefab/PopupUpgrades.prefab.meta
+Assets/HOMEWORK/Common/Prefab/PopupUpgrades.prefab
+Assets/HOMEWORK/Common/Prefab/Header (Popup).prefab.meta
+Assets/HOMEWORK/Common/Prefab/Header (Popup).prefab
+Assets/HOMEWORK/Common/Prefab/ButtonClose.prefab.meta
+Assets/HOMEWORK/Common/Prefab/ButtonClose.prefab
+Assets/HOMEWORK/Common/Prefab/Anticlicker (Popup).prefab.meta
+Assets/HOMEWORK/Common/Prefab/Anticlicker (Popup).prefab
+Assets/HOMEWORK/Common/Prefab.meta
+Assets/HOMEWORK/Common/Prefab.meta
